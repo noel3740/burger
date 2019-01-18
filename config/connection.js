@@ -1,6 +1,5 @@
 //Add dependencies
 const mysql = require("mysql");
-require('dotenv').config();
 
 //Create mySQL connection variable
 let connection;
@@ -21,7 +20,7 @@ if (process.env.JAWSDB_URL) {
         password: process.env.DATABASE_PASSWORD,
         database: "burgers_db"
     });
-} l
+}
 
 //Export the connection
 module.exports = connection;
