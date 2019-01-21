@@ -2,19 +2,34 @@
 const connection = require('./connection');
 
 var orm = {
-    //Function to select all from the burger table
-    selectAll: (tableName) => {
-        console.log("this is a test");
+    //Function to select all from a table
+    selectAll: (tableName, cb) => {
+        const queryString = "SELECT * FROM ??";
+        connection.query(queryString, [tableName], function(err, result) {
+            if (err) throw err;
+            cb(result);
+        });
     },
 
-    //Function to insert one burger
-    insertOne: (tableName) => {
-        console.log("this is a test2");
+    //Function to insert one row into a table
+    insertOne: (tableName, columns, values, cb) => {
+        const queryString = `
+        INSERT INTO ?? 
+            (??)
+            VALUES (?)`;
+        connection.query(queryString, [tableName, columns, values], (err, result) => {
+            if (err) throw err;
+            cb(result);
+        });
     },
 
-    //Function to update one burger
-    updateOne: (tableName) => {
-        console.log("this is a test3");
+    //Function to update one item in a table
+    updateOne: (tableName, whatToUpdate, rowIDValue, cb) => {
+        const queryString = "UPDATE ?? SET ? WHERE ID = ?";
+        connection.query(queryString, [tableName, whatToUpdate, rowIDValue], (err, result) => {
+            if (err) throw err;
+            cb(result);
+        });
     }
 }
 
