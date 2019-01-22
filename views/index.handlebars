@@ -1,11 +1,11 @@
-<div class="container">
+<header class="jumbotron text-center text-white burger-header">
+    <h1 class="display-3 burger-heading">Eat-Da-Burger!</h1>
+    <hr>
+    <h2 class="mb-4">Enter the name of a burger you would like to add and click the devour button to eat the
+        burger!</h2>
+</header>
 
-    <header class="jumbotron text-center">
-        <h1><img src="/assets/img/burger_2-512.png" width="70px" alt="Burger Icon"> Eat-Da-Burger!</h1>
-        <hr>
-        <h2 class="mb-4">Enter the name of a burger you would like to add and click the devour button to eat the
-            burger!</h2>
-    </header>
+<main class="container">
 
     <!-- Display burgers -->
     <section class="row">
@@ -14,11 +14,12 @@
         <div class="col-sm-12 col-md-6 mb-3">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Burgers to eat</h5>
+                    <h3 class="card-title">Burgers to eat</h3>
                     <ul class="list-group list-group-flush">
                         {{#each burgers}}
                         {{#unless devoured}}
-                            <li class="list-group-item">{{id}}. {{burger_name}} <button class="btn btn-primary btn-sm float-right devourButton" data-burger-id="{{id}}">Devour</button></li>
+                        <li class="list-group-item">{{id}}. {{burger_name}} <button class="btn btn-success btn-sm float-right devourButton"
+                                data-burger-id="{{id}}">Devour</button></li>
                         {{/unless}}
                         {{/each}}
                     </ul>
@@ -30,11 +31,11 @@
         <div class="col-sm-12 col-md-6 mb-3">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Burgers devoured</h5>
+                    <h3 class="card-title">Burgers devoured</h3>
                     <ul class="list-group list-group-flush">
                         {{#each burgers}}
                         {{#if devoured}}
-                            <li class="list-group-item">{{id}}. {{burger_name}}</li>
+                        <li class="list-group-item">{{id}}. {{burger_name}}</li>
                         {{/if}}
                         {{/each}}
                     </ul>
@@ -49,7 +50,7 @@
         <div class="col-sm-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Add a new burger</h5>
+                    <h3 class="card-title">Add a new burger</h3>
                     <form id="addBurgerForm" class="needs-validation" novalidate>
                         <div class="form-group">
                             <input type="text" class="form-control" name="burgerName" placeholder="Enter a Burger Name"
@@ -58,10 +59,10 @@
                                 Please enter a burger name.
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Add Burger</button>
+                        <button type="submit" class="btn btn-danger">Add Burger</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-</div>
+</main>
