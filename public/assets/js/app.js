@@ -20,7 +20,7 @@ $(document).ready(() => {
         });
     });
 
-    $(".devourButton").on("click", function () {
+    $(".devourButton").on("click", function (event) {
         var id = $(this).data("burger-id");
 
         //Create a new burger object that only contains the devoured set to true
@@ -33,9 +33,9 @@ $(document).ready(() => {
             type: "PUT",
             data: newBurgerState
         }).then(function () {
-            console.log("Changed devoured to true");
-            //Reload the page to get the updated burger list on the screen
-            location.reload();
+
+            //Hide burger item with animation 
+            $(event.target).parent().hide({ duration: 500, complete: () => location.reload() });
         });
     });
 });
