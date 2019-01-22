@@ -32,3 +32,10 @@ footer {
 .burger-card-yellow, .burger-card-yellow .list-group-item {
     background-color: #ffec58;
 }
+
+@media screen and (max-width: 576px) {
+    .burger-header {
+      background-position: center top;
+    }
+  }
+
