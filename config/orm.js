@@ -1,7 +1,7 @@
 //Add dependencies
 const connection = require('./connection');
 
-var orm = {
+const orm = {
     //Function to select all from a table
     selectAll: (tableName, cb) => {
         const queryString = "SELECT * FROM ??";

@@ -1,7 +1,7 @@
 //Add dependencies
 const orm = require("../config/orm");
 
-var burger = {
+const burger = {
     all: (cb) => {
         orm.selectAll("burgers", (result) => {
             cb(result);

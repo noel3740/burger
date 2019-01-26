@@ -5,10 +5,10 @@ const exphbs = require("express-handlebars");
 const routes = require("./controllers/burgers_controller");
 
 //Set port server will be listing on
-var PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 //Initialize the express app
-var app = express();
+const app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
