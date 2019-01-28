@@ -8,3 +8,5 @@ This is a mobile friendly burger logger built with MySQL, Node, Express, Handleb
 * The app will store every burger in a `mySQL` database.
 
 The deployed application can be found [here](https://noel-eat-burger.herokuapp.com/).
+
+![Screenshot of program](screenshot.jpg)
