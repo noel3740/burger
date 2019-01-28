@@ -9,4 +9,4 @@ This is a mobile friendly burger logger built with MySQL, Node, Express, Handleb
 
 The deployed application can be found [here](https://noel-eat-burger.herokuapp.com/).
 
-![Screenshot of program](screenshot.jpg)
+![](screenshot.JPG "Screenshot of Program")
