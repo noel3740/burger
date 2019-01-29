@@ -9,4 +9,23 @@ This is a mobile friendly burger logger built with MySQL, Node, Express, Handleb
 
 The deployed application can be found [here](https://noel-eat-burger.herokuapp.com/).
 
-![](screenshot.JPG "Screenshot of Program")
+## To add a new burger
+
+1. Enter the name of the burger you would like to add in the `Add a new burger` section and hit the enter key or `Add New` button.
+
+    ![](screenshots/add-new-burger.JPG "Screenshot of Adding a New Burger")
+
+2. You should see the new burger added to the `Burgers to eat` section.
+
+    ![](screenshots/burgers-to-eat-section.JPG "Screenshot of Burgers to eat section")
+
+## To eat a burger
+
+1. Press the `devour` button to the right of the burger you would like to eat.
+
+    ![](screenshots/devour-button.JPG "Screenshot of the devour button")
+
+2. When the is pressed the burger will move from the `Burgers to eat` section to the `Burgers devoured` section.
+
+    ![](screenshots/burgers-devoured-section.JPG "Screenshot of the burgers devoured section")
+
