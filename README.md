@@ -25,7 +25,7 @@ The deployed application can be found [here](https://noel-eat-burger.herokuapp.c
 
     ![](screenshots/devour-button.JPG "Screenshot of the devour button")
 
-2. When the is pressed the burger will move from the `Burgers to eat` section to the `Burgers devoured` section.
+2. When the `devour` button is pressed the burger will move from the `Burgers to eat` section to the `Burgers devoured` section.
 
     ![](screenshots/burgers-devoured-section.JPG "Screenshot of the burgers devoured section")
 
